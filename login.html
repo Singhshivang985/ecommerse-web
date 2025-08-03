@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Amazon Clone</title>
+  <link rel="stylesheet" href="css/login.css" />
+  <style>
+    /*  Branding Header Styles */
+    .branding {
+      position: absolute;
+      top: 40px;
+      width: 100%;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.85);
+      text-shadow:
+        0 0 10px rgba(255, 153, 0, 0.4),
+        0 0 30px rgba(255, 153, 0, 0.3),
+        0 0 60px rgba(255, 153, 0, 0.2);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      z-index: 10;
+    }
+
+    body {
+      position: relative;
+      background: linear-gradient(to right, #2c2c2c, #1a1a1a);
+    }
+  </style>
+</head>
+<body>
+
+  <!--  Branding Banner -->
+  <div class="branding">Amazon an Ecom Website By Shivang Singh</div>
+
+  <!-- 🔐 Login Form Box -->
+  <div class="login-container">
+    <h2>Login</h2>
+    <form class="login-form">
+      <input type="email" placeholder="Email or Phone Number" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+      <p class="helper-text">Forgot Password? <a href="#">Click here</a></p>
+      <p class="helper-text">Don't have an account? <a href="#">Sign up</a></p>
+    </form>
+  </div>
+
+  <!-- ✅ Login Redirect Script -->
+  <script>
+    document.querySelector('.login-form').addEventListener('submit', function(e) {
+      e.preventDefault(); // Stop actual form submission
+      window.location.href = 'index.html'; // Redirect to homepage
+    });
+  </script>
+</body>
+</html>

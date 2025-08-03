@@ -1,0 +1,104 @@
+/* Body Background with Gradient */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #2c2c2c, #1a1a1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+/* 🔥 Branding Header */
+.branding {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow:
+    0 0 10px rgba(255, 153, 0, 0.4),
+    0 0 30px rgba(255, 153, 0, 0.3),
+    0 0 60px rgba(255, 153, 0, 0.2);
+  z-index: 10;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Login Card */
+.login-container {
+  background: #ffffff;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+}
+
+.login-container h2 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.login-form input {
+  width: 100%;
+  padding: 14px 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #f90;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 153, 0, 0.4);
+}
+
+/* Button */
+.login-form button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 18px;
+  background: linear-gradient(135deg, #f90, #ffb347);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: linear-gradient(135deg, #e68a00, #ff9900);
+}
+
+/* Links */
+.helper-text {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.helper-text a {
+  color: #f90;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.helper-text a:hover {
+  text-decoration: underline;
+}
